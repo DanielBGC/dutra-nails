@@ -25,7 +25,7 @@ const BlogPostPage = () => {
       exit={{ opacity: 0 }}
     >
       <div className="container narrow">
-        <Link to="/blog" className="back-link" target="_blank" rel="noopener noreferrer">
+        <Link to="/blog" className="back-link" rel="noopener noreferrer">
           <ChevronLeft size={20} /> Voltar para o blog
         </Link>
 

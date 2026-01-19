@@ -29,8 +29,9 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="hero-badge">Clean Girl Aesthetic</span>
-          <h1>A elegância em cada detalhe das suas mãos.</h1>
-          <p>Especialista em alongamentos em fibra de vidro e nail art minimalista. Um refúgio de sofisticação para quem valoriza o natural.</p>
+          <h1>Delicadeza e perfeição em cada detalhe das suas mãos.</h1>
+          <p>Eleve sua autoestima com o cuidado que você merece. Serviços exclusivos e personalizados para realçar sua essência com a assinatura Dutra Nails.</p>
+
           <div className="hero-btns">
             <a href={whatsappUrl} className="btn btn-primary pulse" style={{ padding: '16px 40px', fontSize: '1.1rem' }} target="_blank" rel="noopener noreferrer">
                Agende via WhatsApp

@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 
 const Portfolio = () => {
   const items = [
-    { id: 1, img: '/src/assets/nail1.png', category: 'Fibra de Vidro' },
-    { id: 2, img: '/src/assets/nail2.png', category: 'Nail Art' },
-    { id: 3, img: '/src/assets/nail1.png', category: 'Blindagem' },
-    { id: 4, img: '/src/assets/nail2.png', category: 'Minimalist' },
-    { id: 5, img: '/src/assets/nail1.png', category: 'Quartz Collection' },
-    { id: 6, img: '/src/assets/nail2.png', category: 'Gold Details' },
+    { id: 1, img: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=1000', category: 'Alongamento' },
+    { id: 2, img: 'https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmFpbHN8ZW58MHx8MHx8fDA%3D', category: 'Banho de Gel' },
+    { id: 3, img: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&q=80&w=1000', category: 'Blindagem' },
+    { id: 4, img: 'https://images.unsplash.com/photo-1612887390768-fb02affea7a6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmFpbHN8ZW58MHx8MHx8fDA%3D', category: 'Esmaltação em Gel' },
+    { id: 5, img: 'https://images.unsplash.com/photo-1588359953494-0c215e3cedc6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5haWxzfGVufDB8fDB8fHww', category: 'Aplicação de Postiça' },
+    { id: 6, img: 'https://images.unsplash.com/photo-1587729927069-ef3b7a5ab9b4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5haWxzfGVufDB8fDB8fHww', category: 'Manicure & Pedicure' },
+
+
   ];
 
   return (

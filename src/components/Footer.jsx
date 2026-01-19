@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Mail, Phone } from 'lucide-react';
+import { Instagram, Mail, Phone } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
@@ -32,7 +32,6 @@ const Footer = () => {
           <p>Onde a beleza encontra a sofisticação. Sua melhor versão começa pelas suas mãos.</p>
           <div className="social-icons">
             <a href="https://instagram.com/edutra_nails" target="_blank" rel="noopener noreferrer" className="social-link"><Instagram size={20} /></a>
-            <a href="https://facebook.com/edutra_nails" target="_blank" rel="noopener noreferrer" className="social-link"><Facebook size={20} /></a>
             <a href="mailto:contato@dutranails.com" className="social-link"><Mail size={20} /></a>
 
           </div>
