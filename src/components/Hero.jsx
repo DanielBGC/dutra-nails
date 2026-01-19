@@ -48,7 +48,9 @@ const Hero = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
           <div className="image-wrapper">
-            <img src="/src/assets/nail1.png" alt="Unhas minimalistas luxuosas" />
+            <img src="/src/assets/alongamento-unha-fibra-vidro-uberaba.png" alt="Unhas perfeitas com alongamento de fibra de vidro em Uberaba - Dutra Nails" />
+
+
             <div className="image-accent"></div>
           </div>
         </motion.div>

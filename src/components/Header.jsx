@@ -6,6 +6,8 @@ const Header = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
+  const whatsappUrl = "https://wa.me/553484285707?text=Vi%20seu%20portfolio%20e%20adorei%20o%20trabalho%2C%20gostaria%20de%20agendar%20um%20horario";
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -56,7 +58,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="header-cta">
-          <a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} className="btn btn-gold" style={{ fontSize: '0.9rem' }} rel="noopener noreferrer">Agendar Agora</a>
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-gold" style={{ fontSize: '0.9rem' }}>Agendar Agora</a>
         </div>
       </div>
 

@@ -19,7 +19,8 @@ export const blogPosts = [
       
       <p>Independentemente da cor, o acabamento 'glow' (brilhoso e saudável) é o que diferencia um trabalho comum de um resultado premium.</p>
     `,
-    img: "/src/assets/blog.png"
+    img: "/src/assets/tendencias-manicure-2026.png"
+
   },
   {
     id: 2,
@@ -39,7 +40,8 @@ export const blogPosts = [
       <h3>Evite Impactos</h3>
       <p>Suas unhas são joias, não ferramentas! Evite usá-las para abrir latas ou remover etiquetas. O impacto mecânico é a principal causa de infiltrações.</p>
     `,
-    img: "/src/assets/nail1.png"
+    img: "/src/assets/alongamento-unha-fibra-vidro-uberaba.png"
+
   },
   {
     id: 3,
@@ -59,6 +61,7 @@ export const blogPosts = [
       <h3>A Escolha dos Materiais</h3>
       <p>Utilizamos apenas pigmentos de alta qualidade e pedrarias de cristal delicadas para garantir que o brilho seja sofisticado, e não exagerado.</p>
     `,
-    img: "/src/assets/nail2.png"
+    img: "/src/assets/nail-art-minimalista-luxury.png"
+
   }
 ];

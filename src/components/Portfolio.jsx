@@ -25,8 +25,9 @@ const Portfolio = () => {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <img src={item.img} alt={`Portfolio ${item.id}`} />
+              <img src={item.img} alt={`${item.category} feito por Dutra Nails em Uberaba`} />
               <div className="portfolio-overlay">
+
                 <span>{item.category}</span>
               </div>
             </motion.div>

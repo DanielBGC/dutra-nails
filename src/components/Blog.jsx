@@ -11,8 +11,9 @@ const Blog = () => {
           {blogPosts.slice(0, 3).map((post) => (
             <article key={post.id} className="blog-card">
               <div className="blog-img">
-                <img src={post.img} alt={post.title} />
+                <img src={post.img} alt={`Post: ${post.title} - Blog Dutra Nails`} />
               </div>
+
               <div className="blog-info">
                 <span>{post.date}</span>
                 <h3>{post.title}</h3>
