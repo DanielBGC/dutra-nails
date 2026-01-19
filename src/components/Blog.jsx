@@ -16,13 +16,13 @@ const Blog = () => {
               <div className="blog-info">
                 <span>{post.date}</span>
                 <h3>{post.title}</h3>
-                <Link to={`/blog/${post.slug}`} className="read-more" target="_blank" rel="noopener noreferrer">Ler mais <span>→</span></Link>
+                <Link to={`/blog/${post.slug}`} className="read-more" rel="noopener noreferrer">Ler mais <span>→</span></Link>
               </div>
             </article>
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
-          <Link to="/blog" className="btn btn-gold" target="_blank" rel="noopener noreferrer">Ver todos os posts</Link>
+          <Link to="/blog" className="btn btn-gold" rel="noopener noreferrer">Ver todos os posts</Link>
         </div>
 
       </div>

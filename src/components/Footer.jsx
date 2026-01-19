@@ -24,7 +24,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-container">
         <div className="footer-brand">
-          <Link to="/" className="logo" style={{ color: 'white' }} target="_blank" rel="noopener noreferrer">
+          <Link to="/" className="logo" style={{ color: 'white' }} rel="noopener noreferrer">
             Dutra <span>Nails</span>
           </Link>
 
@@ -41,10 +41,10 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Links Úteis</h4>
           <ul>
-            <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')} target="_blank" rel="noopener noreferrer">Sobre Mim</a></li>
-            <li><a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} target="_blank" rel="noopener noreferrer">Portfólio</a></li>
-            <li><a href="#testimonials" onClick={(e) => handleNavClick(e, '#testimonials')} target="_blank" rel="noopener noreferrer">Depoimentos</a></li>
-            <li><Link to="/blog" target="_blank" rel="noopener noreferrer">Blog</Link></li>
+            <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')} rel="noopener noreferrer">Sobre Mim</a></li>
+            <li><a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} rel="noopener noreferrer">Portfólio</a></li>
+            <li><a href="#testimonials" onClick={(e) => handleNavClick(e, '#testimonials')} rel="noopener noreferrer">Depoimentos</a></li>
+            <li><Link to="/blog" rel="noopener noreferrer">Blog</Link></li>
 
           </ul>
         </div>

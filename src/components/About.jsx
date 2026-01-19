@@ -1,38 +1,41 @@
-import React from 'react';
-
 const About = () => {
+  const services = [
+    { title: "Alongamento", desc: "Extensões impecáveis com naturalidade e resistência." },
+    { title: "Banho de Gel", desc: "Camada de gel sobre a unha natural para maior durabilidade." },
+    { title: "Blindagem", desc: "Proteção extra para unhas naturais crescerem saudáveis." },
+    { title: "Esmaltação em Gel", desc: "Brilho intenso e cor perfeita por até 21 dias." },
+    { title: "Aplicação de Postiça", desc: "Praticidade e elegância para ocasiões especiais." },
+    { title: "Manicure & Pedicure", desc: "Cuidado tradicional com acabamento de luxo." },
+  ];
+
   return (
     <section id="about" className="about reveal">
       <div className="container about-container">
         <div className="about-image">
-          <img src="/src/assets/working.png" alt="Nail designer trabalhando" />
+          <img src="/src/assets/working.png" alt="Dutra Nails em ação" />
         </div>
         <div className="about-content">
-          <span className="subtitle">Minha Trajetória</span>
-          <h2 className="section-title" style={{ textAlign: 'left', margin: '10px 0 30px' }}>Apaixonada por elevar a autoestima em cada toque.</h2>
-          <p>Com mais de 5 anos de experiência no mercado de luxo, especializei-me na técnica de <strong>fibra de vidro</strong>, proporcionando resultados naturais e resistentes. Meu foco é a <strong>nail art minimalista</strong>, onde "menos é mais".</p>
-          <div className="specialties">
-            <div className="specialty-item">
-              <div className="icon">✦</div>
-              <div>
-                <h4>Fibra de Vidro</h4>
-                <p>Alongamento ultra-resistente com aspecto 100% natural.</p>
+          <span className="subtitle">Sobre Mim</span>
+          <h2 className="section-title" style={{ textAlign: 'left', margin: '10px 0 30px' }}>
+            Elevando sua essência através do cuidado.
+          </h2>
+          <p className="about-description">
+            Com mais de 5 anos de experiência no ramo, meu principal objetivo é elevar a sua autoestima através de serviços personalizados e exclusivos. 
+            Busco transformar suas unhas com delicadeza e perfeição, proporcionando não apenas um resultado estético, 
+            mas uma verdadeira experiência de confiança e autoaceitação. 
+            Afinal, não é apenas um serviço bonito, mas sim um investimento no seu bem-estar e na sua inspiração diária.
+          </p>
+          
+          <div className="specialties-grid">
+            {services.map((service, index) => (
+              <div className="specialty-card" key={index}>
+                <div className="icon">✦</div>
+                <div>
+                  <h4>{service.title}</h4>
+                  <p>{service.desc}</p>
+                </div>
               </div>
-            </div>
-            <div className="specialty-item">
-              <div className="icon">✦</div>
-              <div>
-                <h4>Nail Art Minimal</h4>
-                <p>Designs exclusivos, traços finos e pedrarias discretas.</p>
-              </div>
-            </div>
-            <div className="specialty-item">
-              <div className="icon">✦</div>
-              <div>
-                <h4>Blindagem</h4>
-                <p>Proteção e força para o crescimento das suas unhas naturais.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -51,6 +54,9 @@ const About = () => {
         .about-image img {
           border-radius: var(--border-radius);
           box-shadow: 20px 20px 0px var(--color-sand);
+          width: 100%;
+          height: auto;
+          object-fit: cover;
         }
         .subtitle {
           color: var(--color-gold);
@@ -59,39 +65,47 @@ const About = () => {
           font-size: 0.9rem;
           letter-spacing: 2px;
         }
-        .about-content p {
+        .about-description {
           color: var(--color-text-light);
           font-size: 1.1rem;
+          line-height: 1.8;
           margin-bottom: 40px;
         }
-        .specialties {
+        .specialties-grid {
           display: grid;
+          grid-template-columns: repeat(2, 1fr);
           gap: 25px;
         }
-        .specialty-item {
+        .specialty-card {
           display: flex;
-          gap: 20px;
+          gap: 15px;
           align-items: flex-start;
         }
-        .specialty-item .icon {
-          font-size: 1.5rem;
-          color: var(--color-gold);
-          line-height: 1;
-        }
-        .specialty-item h4 {
+        .specialty-card .icon {
           font-size: 1.2rem;
-          margin-bottom: 5px;
+          color: var(--color-gold);
+          margin-top: 3px;
         }
-        .specialty-item p {
-          font-size: 0.95rem;
-          margin-bottom: 0;
+        .specialty-card h4 {
+          font-size: 1.1rem;
+          margin-bottom: 4px;
+          color: var(--color-text);
+        }
+        .specialty-card p {
+          font-size: 0.9rem;
+          color: var(--color-text-light);
+          line-height: 1.4;
         }
         @media (max-width: 992px) {
           .about-container {
             grid-template-columns: 1fr;
+            gap: 50px;
           }
           .about-image {
             order: 2;
+          }
+          .specialties-grid {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>

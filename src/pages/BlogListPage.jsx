@@ -37,7 +37,7 @@ const BlogListPage = () => {
                   <span>{post.date}</span>
                   <h3>{post.title}</h3>
                   <p>{post.excerpt}</p>
-                  <Link to={`/blog/${post.slug}`} className="read-more" target="_blank" rel="noopener noreferrer">Ler post completo <span>→</span></Link>
+                  <Link to={`/blog/${post.slug}`} className="read-more" rel="noopener noreferrer">Ler post completo <span>→</span></Link>
                 </div>
 
               </motion.article>

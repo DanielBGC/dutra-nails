@@ -35,7 +35,7 @@ const Hero = () => {
             <a href={whatsappUrl} className="btn btn-primary pulse" style={{ padding: '16px 40px', fontSize: '1.1rem' }} target="_blank" rel="noopener noreferrer">
                Agende via WhatsApp
             </a>
-            <a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} className="btn" style={{ border: '1px solid var(--color-gold)', color: 'var(--color-gold)' }} target="_blank" rel="noopener noreferrer">Ver Portfólio</a>
+            <a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} className="btn" style={{ border: '1px solid var(--color-gold)', color: 'var(--color-gold)' }} rel="noopener noreferrer">Ver Portfólio</a>
           </div>
 
         </motion.div>

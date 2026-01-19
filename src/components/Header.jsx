@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled || pathname !== '/' ? 'scrolled glass' : ''}`}>
       <div className="container header-container">
-        <Link to="/" className="logo" target="_blank" rel="noopener noreferrer">
+        <Link to="/" className="logo" rel="noopener noreferrer">
           Dutra <span>Nails</span>
         </Link>
 
@@ -47,16 +47,16 @@ const Header = () => {
             {navLinks.map((link) => (
               <li key={link.name}>
                 {link.href.startsWith('#') ? (
-                  <a href={link.href} onClick={(e) => handleNavClick(e, link.href)} target="_blank" rel="noopener noreferrer">{link.name}</a>
+                  <a href={link.href} onClick={(e) => handleNavClick(e, link.href)} rel="noopener noreferrer">{link.name}</a>
                 ) : (
-                  <Link to={link.href} target="_blank" rel="noopener noreferrer">{link.name}</Link>
+                  <Link to={link.href} rel="noopener noreferrer">{link.name}</Link>
                 )}
               </li>
             ))}
           </ul>
         </nav>
         <div className="header-cta">
-          <a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} className="btn btn-gold" style={{ fontSize: '0.9rem' }} target="_blank" rel="noopener noreferrer">Agendar Agora</a>
+          <a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} className="btn btn-gold" style={{ fontSize: '0.9rem' }} rel="noopener noreferrer">Agendar Agora</a>
         </div>
       </div>
 
