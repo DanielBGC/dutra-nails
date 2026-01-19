@@ -12,7 +12,7 @@ const About = () => {
     <section id="about" className="about reveal">
       <div className="container about-container">
         <div className="about-image">
-          <img src="/src/assets/nail-designer-atendimento-uberaba.png" alt="Especialista Dutra Nails realizando atendimento de luxo em Uberaba" />
+          <img src="/src/assets/nail-designer-atendimento-uberaba.png" alt="Especialista Edutra Nails realizando atendimento de luxo em Uberaba" />
 
 
         </div>

@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="container footer-container">
         <div className="footer-brand">
           <Link to="/" className="logo" style={{ color: 'white' }} rel="noopener noreferrer">
-            Dutra <span>Nails</span>
+            Edutra <span>Nails</span>
           </Link>
 
 
@@ -59,7 +59,7 @@ const Footer = () => {
       
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; 2026 Dutra Nails. Todos os direitos reservados.</p>
+          <p>&copy; 2026 Edutra Nails. Todos os direitos reservados.</p>
 
         </div>
       </div>

@@ -41,7 +41,7 @@ const Header = () => {
     <header className={`header ${isScrolled || pathname !== '/' ? 'scrolled glass' : ''}`}>
       <div className="container header-container">
         <Link to="/" className="logo" rel="noopener noreferrer">
-          Dutra <span>Nails</span>
+          Edutra <span>Nails</span>
         </Link>
 
         <nav className="nav">

@@ -30,7 +30,7 @@ const Hero = () => {
         >
           <span className="hero-badge">Clean Girl Aesthetic</span>
           <h1>Delicadeza e perfeição em cada detalhe das suas mãos.</h1>
-          <p>Eleve sua autoestima com o cuidado que você merece. Serviços exclusivos e personalizados para realçar sua essência com a assinatura Dutra Nails.</p>
+          <p>Eleve sua autoestima com o cuidado que você merece. Serviços exclusivos e personalizados para realçar sua essência com a assinatura Edutra Nails.</p>
 
           <div className="hero-btns">
             <a href={whatsappUrl} className="btn btn-primary pulse" style={{ padding: '16px 40px', fontSize: '1.1rem' }} target="_blank" rel="noopener noreferrer">
@@ -48,7 +48,7 @@ const Hero = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
           <div className="image-wrapper">
-            <img src="/src/assets/alongamento-unha-fibra-vidro-uberaba.png" alt="Unhas perfeitas com alongamento de fibra de vidro em Uberaba - Dutra Nails" />
+            <img src="/src/assets/alongamento-unha-fibra-vidro-uberaba.png" alt="Unhas perfeitas com alongamento de fibra de vidro em Uberaba - Edutra Nails" />
 
 
             <div className="image-accent"></div>

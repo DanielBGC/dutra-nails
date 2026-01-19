@@ -1,7 +1,7 @@
-# ✨ Dutra Nails - Luxury Landing Page
+# ✨ Edutra Nails - Luxury Landing Page
 
 <div align="center">
-  <img src="./public/favicon.svg" width="100" alt="Dutra Nails Logo" />
+  <img src="./public/favicon.svg" width="100" alt="Edutra Nails Logo" />
   <p align="center">
     <strong>Landing Page de alto padrão para Nail Designers</strong><br />
     <em>Moderna, Minimalista, Luxuosa e "Clean Girl Aesthetic"</em>
@@ -12,7 +12,7 @@
 
 ## 💅 Sobre o Projeto
 
-O **Dutra Nails** é uma Landing Page premium desenvolvida especificamente para profissionais do ramo de estética que buscam uma presença digital sofisticada. O design foi cuidadosamente planejado seguindo a tendência _Clean Girl Aesthetic_, utilizando tons de areia, off-white, rosa quartzo suave e detalhes em dourado champagne.
+O **Edutra Nails** é uma Landing Page premium desenvolvida especificamente para profissionais do ramo de estética que buscam uma presença digital sofisticada. O design foi cuidadosamente planejado seguindo a tendência _Clean Girl Aesthetic_, utilizando tons de areia, off-white, rosa quartzo suave e detalhes em dourado champagne.
 
 ## 🚀 Funcionalidades
 
@@ -73,7 +73,7 @@ O **Dutra Nails** é uma Landing Page premium desenvolvida especificamente para 
 
 ## 📧 Contato
 
-- **Nail Designer:** Dutra Nails
+- **Nail Designer:** Edutra Nails
 - **WhatsApp:** (34) 8428-5707
 - **Instagram:** [@edutra_nails](https://instagram.com/edutra_nails)
 - **Email:** contato@dutranails.com
