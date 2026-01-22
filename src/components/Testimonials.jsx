@@ -1,8 +1,6 @@
-import React from 'react';
-
 const Testimonials = () => {
   const reviews = [
-    { name: "Maria Clara", text: "Melhor experiência que eu já tive! O studio é lindo e minhas nunca ficaram bem naturais e resistentes.", rating: 5 },
+    { name: "Maria Clara", text: "Melhor experiência que eu já tive! O studio é lindo, organizado e aconchegante, e minhas unhas ficaram bem naturais e resistentes.", rating: 5 },
     { name: "Bruna Morais", text: "Uma profissional muito atenciosa e talentosa, com uma grande atenção aos detalhes.", rating: 5 },
     { name: "Estela Gonçalves", text: "Minha blindagem durou muito mais do que o normal. Profissional excelente e muito cuidadosa.", rating: 5 },
   ];
