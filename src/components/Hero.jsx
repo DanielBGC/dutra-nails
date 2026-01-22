@@ -1,6 +1,7 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useLocation, useNavigate } from 'react-router-dom';
+
+import heroImg from '../assets/alongamento-unha-fibra-vidro-uberaba.png';
 
 const Hero = () => {
   const { pathname } = useLocation();
@@ -48,7 +49,7 @@ const Hero = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
           <div className="image-wrapper">
-            <img src="/src/assets/alongamento-unha-fibra-vidro-uberaba.png" alt="Unhas perfeitas com alongamento de fibra de vidro em Uberaba - Edutra Nails" />
+            <img src={heroImg} alt="Unhas perfeitas com alongamento de fibra de vidro em Uberaba - Edutra Nails" />
 
 
             <div className="image-accent"></div>

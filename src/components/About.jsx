@@ -1,3 +1,5 @@
+import aboutImg from '../assets/nail-designer-atendimento-uberaba.png';
+
 const About = () => {
   const services = [
     { title: "Alongamento", desc: "Extensões impecáveis com naturalidade e resistência." },
@@ -12,7 +14,7 @@ const About = () => {
     <section id="about" className="about reveal">
       <div className="container about-container">
         <div className="about-image">
-          <img src="/src/assets/nail-designer-atendimento-uberaba.png" alt="Especialista Edutra Nails realizando atendimento de luxo em Uberaba" />
+          <img src={aboutImg} alt="Especialista Edutra Nails realizando atendimento de luxo em Uberaba" />
 
 
         </div>
