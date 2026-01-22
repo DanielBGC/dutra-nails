@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { useLocation, useNavigate } from 'react-router-dom';
-
-import heroImg from '../assets/alongamento-unha-fibra-vidro-uberaba.png';
+import { getWhatsappUrl } from '../helpers/getWhatsappUrl';
+import heroImg from '../assets/profissional-maria-eduarda-dutra-alves.png';
 
 const Hero = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
-  const whatsappUrl = "https://wa.me/553484285707?text=Vi%20seu%20portfolio%20e%20adorei%20o%20trabalho%2C%20gostaria%20de%20agendar%20um%20horario";
+  const whatsappUrl = getWhatsappUrl();
 
   const handleNavClick = (e, href) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ const Hero = () => {
         >
           <span className="hero-badge">Clean Girl Aesthetic</span>
           <h1>Delicadeza e perfeição em cada detalhe das suas mãos.</h1>
-          <p>Eleve sua autoestima com o cuidado que você merece. Serviços exclusivos e personalizados para realçar sua essência com a assinatura Edutra Nails.</p>
+          <p>Eleve sua autoestima com o cuidado que você merece. Serviços exclusivos e personalizados para realçar sua essência com o salão Edutra Nails.</p>
 
           <div className="hero-btns">
             <a href={whatsappUrl} className="btn btn-primary pulse btn-hero-whatsapp" target="_blank" rel="noopener noreferrer">

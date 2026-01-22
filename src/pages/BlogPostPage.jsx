@@ -3,10 +3,13 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { blogPosts } from '../data/blogData';
 import { ChevronLeft } from 'lucide-react';
+import { getWhatsappUrl } from '../helpers/getWhatsappUrl';
 
 const BlogPostPage = () => {
   const { slug } = useParams();
   const post = blogPosts.find(p => p.slug === slug);
+
+  const whatsappUrl = getWhatsappUrl();
 
   if (!post) {
     return (
@@ -43,7 +46,7 @@ const BlogPostPage = () => {
         <div className="post-footer">
           <h3>Gostou deste conteúdo?</h3>
           <p>Compartilhe com suas amigas ou agende seu horário para ter unhas incríveis também!</p>
-          <a href="https://wa.me/553484285707?text=Vi%20seu%20portfolio%20e%20adorei%20o%20trabalho%2C%20gostaria%20de%20agendar%20um%20horario" className="btn btn-primary pulse" target="_blank" rel="noopener noreferrer">
+          <a href={whatsappUrl} className="btn btn-primary pulse" target="_blank" rel="noopener noreferrer">
             Agendar via WhatsApp
           </a>
 

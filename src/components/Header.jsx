@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';    
+import { getWhatsappUrl } from '../helpers/getWhatsappUrl';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
-  const whatsappUrl = "https://wa.me/553484285707?text=Vi%20seu%20portfolio%20e%20adorei%20o%20trabalho%2C%20gostaria%20de%20agendar%20um%20horario";
+  const whatsappUrl = getWhatsappUrl();
 
   useEffect(() => {
     const handleScroll = () => {
