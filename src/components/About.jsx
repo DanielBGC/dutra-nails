@@ -104,12 +104,22 @@ const About = () => {
           .about-container {
             grid-template-columns: 1fr;
             gap: 50px;
+            text-align: center;
           }
           .about-image {
             order: 2;
           }
           .specialties-grid {
             grid-template-columns: 1fr;
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+          }
+          .specialty-card h4 {
+            font-size: 1.2rem;
+          }
+          .specialty-card p {
+            font-size: 1rem;
           }
         }
       `}</style>

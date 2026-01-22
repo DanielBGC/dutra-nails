@@ -34,10 +34,10 @@ const Hero = () => {
           <p>Eleve sua autoestima com o cuidado que você merece. Serviços exclusivos e personalizados para realçar sua essência com a assinatura Edutra Nails.</p>
 
           <div className="hero-btns">
-            <a href={whatsappUrl} className="btn btn-primary pulse" style={{ padding: '16px 40px', fontSize: '1.1rem' }} target="_blank" rel="noopener noreferrer">
+            <a href={whatsappUrl} className="btn btn-primary pulse btn-hero-whatsapp" target="_blank" rel="noopener noreferrer">
                Agende via WhatsApp
             </a>
-            <a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} className="btn" style={{ border: '1px solid var(--color-gold)', color: 'var(--color-gold)' }} rel="noopener noreferrer">Ver Portfólio</a>
+            <a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} className="btn btn-hero-portfolio" rel="noopener noreferrer">Ver Portfólio</a>
           </div>
 
         </motion.div>
@@ -74,13 +74,13 @@ const Hero = () => {
         }
         .hero-badge {
           display: inline-block;
-          padding: 6px 16px;
+          padding: 8px 20px;
           background: var(--color-quartz);
           color: var(--color-terracotta);
           border-radius: 20px;
-          font-size: 0.85rem;
+          font-size: 0.95rem;
           font-weight: 600;
-          letter-spacing: 1px;
+          letter-spacing: 1.5px;
           text-transform: uppercase;
           margin-bottom: 24px;
         }
@@ -88,17 +88,29 @@ const Hero = () => {
           font-size: 4rem;
           margin-bottom: 24px;
           color: var(--color-text);
+          line-height: 1.1;
         }
         .hero p {
-          font-size: 1.2rem;
+          font-size: 1.25rem;
           color: var(--color-text-light);
           margin-bottom: 40px;
           max-width: 600px;
+          line-height: 1.6;
         }
         .hero-btns {
           display: flex;
           gap: 20px;
           align-items: center;
+        }
+        .btn-hero-whatsapp {
+          padding: 18px 44px;
+          font-size: 1.15rem;
+        }
+        .btn-hero-portfolio {
+          padding: 16px 32px;
+          font-size: 1.1rem;
+          border: 1px solid var(--color-gold);
+          color: var(--color-gold);
         }
         .hero-image {
           position: relative;
@@ -128,19 +140,49 @@ const Hero = () => {
           .hero-container {
             grid-template-columns: 1fr;
             text-align: center;
+            padding: 40px 20px;
           }
           .hero h1 {
-            font-size: 3rem;
+            font-size: 3.2rem;
           }
           .hero p {
             margin: 0 auto 40px;
+            font-size: 1.1rem;
           }
           .hero-btns {
             justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+          }
+          .btn-hero-whatsapp, .btn-hero-portfolio {
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
           }
           .hero-image {
-            max-width: 500px;
-            margin: 0 auto;
+            max-width: 400px;
+            margin: 40px auto 0;
+          }
+        }
+        @media (max-width: 480px) {
+          .hero h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+          }
+          .hero-badge {
+            font-size: 1.1rem;
+            padding: 10px 24px;
+            margin-bottom: 20px;
+          }
+          .btn-hero-whatsapp {
+            padding: 24px 32px;
+            font-size: 1.3rem;
+            border-radius: 40px;
+          }
+          .btn-hero-portfolio {
+            padding: 22px 32px;
+            font-size: 1.2rem;
+            border-radius: 40px;
           }
         }
       `}</style>

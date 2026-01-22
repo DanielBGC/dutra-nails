@@ -139,7 +139,25 @@ const Footer = () => {
         @media (max-width: 768px) {
           .footer-container {
             grid-template-columns: 1fr;
-            gap: 40px;
+            gap: 50px;
+            text-align: center;
+          }
+          .footer-brand p {
+            margin: 20px auto;
+            font-size: 1.1rem;
+          }
+          .social-icons {
+            justify-content: center;
+            gap: 20px;
+          }
+          .footer-contact p {
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+          }
+          .footer-links h4, .footer-contact h4 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
           }
         }
       `}</style>

@@ -89,6 +89,19 @@ function App() {
           .whatsapp-float:hover {
             transform: scale(1.1);
           }
+          @media (max-width: 768px) {
+            .whatsapp-float {
+              width: 80px;
+              height: 80px;
+              bottom: 30px;
+              right: 30px;
+              box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            }
+            .whatsapp-float svg {
+              width: 40px;
+              height: 40px;
+            }
+          }
         `}</style>
       </div>
     </Router>

@@ -127,6 +127,15 @@ const Header = () => {
             display: none;
           }
         }
+        @media (max-width: 768px) {
+          .header {
+            height: 80px;
+          }
+          .logo {
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+          }
+        }
       `}</style>
     </header>
   );
