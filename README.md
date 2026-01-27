@@ -74,9 +74,9 @@ O **Edutra Nails** é uma Landing Page premium desenvolvida especificamente para
 ## 📧 Contato
 
 - **Nail Designer:** Edutra Nails
-- **WhatsApp:** (34) 8428-5707
+- **WhatsApp:** (34) 99317-4178
 - **Instagram:** [@edutra_nails](https://instagram.com/edutra_nails)
-- **Email:** contato@dutranails.com
+- **Email:** contato@edutranails.com
 - **Localização:** Uberaba, MG - Brasil
 
 ---

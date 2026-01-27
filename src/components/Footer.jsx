@@ -50,8 +50,8 @@ const Footer = () => {
         
         <div className="footer-contact">
           <h4>Contato</h4>
-          <p><Phone size={16} /> (34) 8428-5707</p>
-          <p><Mail size={16} /> contato@dutranails.com</p>
+          <p><Phone size={16} /> (34) 99317-4178</p>
+          <p><Mail size={16} /> contato@edutranails.com</p>
 
           <p>Uberaba, MG - Brasil</p>
         </div>
