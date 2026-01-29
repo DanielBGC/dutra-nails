@@ -1,16 +1,20 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+
+import alongamentoImg from '../assets/portfolio/alongamento-unha-uberaba.jpg';
+import banhoDeGelImg from '../assets/portfolio/banho-de-gel-uberaba.jpg';
+import blindagemImg from '../assets/portfolio/blindagem-unha-uberaba.jpg';
+import esmaltaçãoEmGelImg from '../assets/portfolio/esmaltação-em-gel-uberaba.jpg';
+import aplicaçãoDePostiçaImg from '../assets/portfolio/unha-postiça-uberaba.jpg';
+import manicureImg from '../assets/portfolio/manicure-uberaba.jpg';
 
 const Portfolio = () => {
   const items = [
-    { id: 1, img: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=1000', category: 'Alongamento' },
-    { id: 2, img: 'https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmFpbHN8ZW58MHx8MHx8fDA%3D', category: 'Banho de Gel' },
-    { id: 3, img: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&q=80&w=1000', category: 'Blindagem' },
-    { id: 4, img: 'https://images.unsplash.com/photo-1612887390768-fb02affea7a6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmFpbHN8ZW58MHx8MHx8fDA%3D', category: 'Esmaltação em Gel' },
-    { id: 5, img: 'https://images.unsplash.com/photo-1588359953494-0c215e3cedc6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5haWxzfGVufDB8fDB8fHww', category: 'Aplicação de Postiça' },
-    { id: 6, img: 'https://images.unsplash.com/photo-1587729927069-ef3b7a5ab9b4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5haWxzfGVufDB8fDB8fHww', category: 'Manicure & Pedicure' },
-
-
+    { id: 1, img: alongamentoImg, category: 'Alongamento' },
+    { id: 2, img: banhoDeGelImg, category: 'Banho de Gel' },
+    { id: 3, img: blindagemImg, category: 'Blindagem' },
+    { id: 4, img: esmaltaçãoEmGelImg, category: 'Esmaltação em Gel' },
+    { id: 5, img: aplicaçãoDePostiçaImg, category: 'Aplicação de Postiça' },
+    { id: 6, img: manicureImg, category: 'Manicure & Pedicure' },
   ];
 
   return (
@@ -19,15 +23,17 @@ const Portfolio = () => {
         <h2 className="section-title">Trabalhos Recentes</h2>
         <div className="portfolio-grid">
           {items.map((item) => (
-            <motion.div 
-              key={item.id} 
+            <motion.div
+              key={item.id}
               className="portfolio-item"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <img src={item.img} alt={`${item.category} feito por Edutra Nails em Uberaba`} />
+              <img
+                src={item.img}
+                alt={`${item.category} feito por Edutra Nails em Uberaba`}
+              />
               <div className="portfolio-overlay">
-
                 <span>{item.category}</span>
               </div>
             </motion.div>

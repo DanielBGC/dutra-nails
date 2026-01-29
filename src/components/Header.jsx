@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';    
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { getWhatsappUrl } from '../helpers/getWhatsappUrl';
 
 const Header = () => {
@@ -39,7 +39,9 @@ const Header = () => {
   ];
 
   return (
-    <header className={`header ${isScrolled || pathname !== '/' ? 'scrolled glass' : ''}`}>
+    <header
+      className={`header ${isScrolled || pathname !== '/' ? 'scrolled glass' : ''}`}
+    >
       <div className="container header-container">
         <Link to="/" className="logo" rel="noopener noreferrer">
           Edutra <span>Nails</span>
@@ -50,16 +52,32 @@ const Header = () => {
             {navLinks.map((link) => (
               <li key={link.name}>
                 {link.href.startsWith('#') ? (
-                  <a href={link.href} onClick={(e) => handleNavClick(e, link.href)} rel="noopener noreferrer">{link.name}</a>
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    rel="noopener noreferrer"
+                  >
+                    {link.name}
+                  </a>
                 ) : (
-                  <Link to={link.href} rel="noopener noreferrer">{link.name}</Link>
+                  <Link to={link.href} rel="noopener noreferrer">
+                    {link.name}
+                  </Link>
                 )}
               </li>
             ))}
           </ul>
         </nav>
         <div className="header-cta">
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-gold" style={{ fontSize: '0.9rem' }}>Agendar Agora</a>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-gold"
+            style={{ fontSize: '0.9rem' }}
+          >
+            Agendar Agora
+          </a>
         </div>
       </div>
 
@@ -78,7 +96,7 @@ const Header = () => {
         }
         .header.scrolled {
           height: 70px;
-          box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
         .header-container {
           display: flex;
@@ -124,7 +142,8 @@ const Header = () => {
           width: 100%;
         }
         @media (max-width: 992px) {
-          .nav, .header-cta {
+          .nav,
+          .header-cta {
             display: none;
           }
         }

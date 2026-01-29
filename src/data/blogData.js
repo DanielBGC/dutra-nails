@@ -1,14 +1,15 @@
-import tendenciasImg from "../assets/tendencias-manicure-2026.png";
-import alongamentoImg from "../assets/alongamento-unha-fibra-vidro-uberaba.png";
-import nailArtImg from "../assets/nail-art-minimalista-luxury.png";
+import tendenciasImg from '../assets/blog/tendencias-manicure-2026.png';
+import alongamentoImg from '../assets/blog/alongamento-unha-fibra-vidro-uberaba.png';
+import nailArtImg from '../assets/blog/nail-art-minimalista-luxury.png';
 
 export const blogPosts = [
   {
     id: 1,
-    slug: "tendencias-verao-2026",
-    title: "Tendências de Cores para o Verão 2026",
-    date: "15 Jan, 2026",
-    excerpt: "Descubra as cores que vão dominar as praias e piscinas nesta estação.",
+    slug: 'tendencias-verao-2026',
+    title: 'Tendências de Cores para o Verão 2026',
+    date: '15 Jan, 2026',
+    excerpt:
+      'Descubra as cores que vão dominar as praias e piscinas nesta estação.',
     content: `
       <p>O verão de 2026 traz uma paleta que mistura o frescor do mar com a sofisticação dos tons terrosos. Como nail designer, vejo uma busca crescente por cores que transmitam calma, mas com um toque de luxo.</p>
       
@@ -23,15 +24,15 @@ export const blogPosts = [
       
       <p>Independentemente da cor, o acabamento 'glow' (brilhoso e saudável) é o que diferencia um trabalho comum de um resultado premium.</p>
     `,
-    img: tendenciasImg
-
+    img: tendenciasImg,
   },
   {
     id: 2,
-    slug: "durabilidade-alongamento",
-    title: "Como fazer seu alongamento durar mais",
-    date: "10 Jan, 2026",
-    excerpt: "Dicas essenciais para manter suas unhas de fibra impecáveis por 30 dias.",
+    slug: 'durabilidade-alongamento',
+    title: 'Como fazer seu alongamento durar mais',
+    date: '10 Jan, 2026',
+    excerpt:
+      'Dicas essenciais para manter suas unhas de fibra impecáveis por 30 dias.',
     content: `
       <p>Ter unhas de fibra de vidro é um investimento na sua imagem. Para garantir que elas permaneçam lindas até a próxima manutenção, alguns cuidados básicos são indispensáveis.</p>
       
@@ -44,15 +45,14 @@ export const blogPosts = [
       <h3>Evite Impactos</h3>
       <p>Suas unhas são joias, não ferramentas! Evite usá-las para abrir latas ou remover etiquetas. O impacto mecânico é a principal causa de infiltrações.</p>
     `,
-    img: alongamentoImg
-
+    img: alongamentoImg,
   },
   {
     id: 3,
-    slug: "guia-nail-art-minimalista",
-    title: "O guia da Nail Art Minimalista",
-    date: "05 Jan, 2026",
-    excerpt: "Menos é mais: aprenda a escolher designs que nunca saem de moda.",
+    slug: 'guia-nail-art-minimalista',
+    title: 'O guia da Nail Art Minimalista',
+    date: '05 Jan, 2026',
+    excerpt: 'Menos é mais: aprenda a escolher designs que nunca saem de moda.',
     content: `
       <p>A nail art minimalista é a definição do luxo contemporâneo. Longe dos excessos, ela foca na precisão e na harmonia dos elementos.</p>
       
@@ -65,7 +65,6 @@ export const blogPosts = [
       <h3>A Escolha dos Materiais</h3>
       <p>Utilizamos apenas pigmentos de alta qualidade e pedrarias de cristal delicadas para garantir que o brilho seja sofisticado, e não exagerado.</p>
     `,
-    img: nailArtImg
-
-  }
+    img: nailArtImg,
+  },
 ];
